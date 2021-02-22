@@ -1,0 +1,1 @@
+{"version":3,"file":"style.js","sourceRoot":"","sources":["../../../src/components/LoginButton/style.ts"],"names":[],"mappings":";;;;AAAA,OAAO,MAAM,MAAM,mBAAmB,CAAA;AAOtC,MAAM,CAAC,IAAM,KAAK,GAAG,MAAM,CAAC,MAAM,iLAAc,wBAC3B,EAAwC,cACnD,EAA4B,oEAIrC,KALoB,UAAC,EAAmB;QAAjB,eAAe,qBAAA;IAAO,OAAA,eAAe;AAAf,CAAe,EACnD,UAAC,EAAa;QAAX,SAAS,eAAA;IAAO,OAAA,SAAS;AAAT,CAAS,CAIrC,CAAA"}

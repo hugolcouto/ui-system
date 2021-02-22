@@ -1,0 +1,69 @@
+{
+  "name": "ui-system",
+  "version": "0.1.0",
+  "private": true,
+  "main": "lib/index.js",
+  "files": ["lib"],
+  "peerDependencies": {
+	"react": ">=17.0.1",
+    "react-dom": ">=17.0.1",
+  },
+  "dependencies": {
+    "react-scripts": "4.0.2",
+    "styled-components": "^5.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "compile-icons": "npx @svgr/cli -d src/icons src/icons --typescript",
+    "build": "tsc",
+	"copy-files": "copyfiles --up 1 src/fonts/* lib/",
+	"prebuild": "rm -rf ./lib && yarn run compile-icons && yarn copy-files",
+	"prepublish": "yarn run build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+	"@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@babel/cli": "^7.12.17",
+    "@storybook/addon-actions": "^6.1.18",
+    "@storybook/addon-essentials": "^6.1.18",
+    "@storybook/addon-links": "^6.1.18",
+    "@storybook/node-logger": "^6.1.18",
+    "@storybook/preset-create-react-app": "^3.1.6",
+    "@storybook/react": "^6.1.18",
+    "@svgr/cli": "^5.5.0",
+    "@types/styled-components": "^5.1.7",
+    "copyfiles": "^2.4.1",
+    "cross-env": "^7.0.3",
+	"react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
+  }
+}
